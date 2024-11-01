@@ -1,5 +1,7 @@
+import { useRef, useState } from "react"
+import { motion } from "framer-motion"
+import emailjs from "@emailjs/browser"
 import "./contact.scss"
-import { animate, motion } from "framer-motion"
 
 const variants = {
   initial: {
@@ -17,6 +19,26 @@ const variants = {
 }
 
 const Contact = () => {
+  const formRef = useRef()
+  const [error, setError] = useState(false)
+  const [success, setSuccess] = useState(false)
+
+  const sendEmail = (e) => {
+    e.preventDefault()
+
+    emailjs
+      .sendForm("service_mo1av64", "template_vziojmd", formRef.current, {
+        publicKey: "6Wj3ENNlb9q4GlB06",
+      })
+      .then(
+        () => {
+          setSuccess(true)
+        },
+        () => {
+          setError(true)
+        },
+      )
+  }
   return (
     <motion.div
       className="contact"
@@ -40,14 +62,17 @@ const Contact = () => {
         </motion.div>
       </motion.div>
       <div className="formContainer">
-        <form>
-          <input type="text" required placeholder="Name" />
-          <input type="email" required placeholder="Email" />
+        <form ref={formRef} onSubmit={sendEmail}>
+          <input type="text" required placeholder="Name" name="name" />
+          <input type="email" required placeholder="Email" name="email" />
           <textarea
             rows={8}
             placeholder="Descreva um pouco sobre o seu projeto"
+            name="message"
           ></textarea>
           <button>Enviar</button>
+          {/* {error && "Error"}
+          {success && "Success"} */}
         </form>
       </div>
     </motion.div>
