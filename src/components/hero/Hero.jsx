@@ -38,12 +38,6 @@ const Hero = () => {
           <motion.h1 variants={textVariants}>
             Desenvolvedor Freelancer
           </motion.h1>
-          <motion.div variants={textVariants} className="buttons">
-            <motion.button variants={textVariants}>
-              See the Latest Works
-            </motion.button>
-            <motion.button variants={textVariants}>Contact Me</motion.button>
-          </motion.div>
           <motion.img
             animate="scrollButton"
             variants={textVariants}
@@ -52,9 +46,6 @@ const Hero = () => {
             alt=""
           />
         </motion.div>
-      </div>
-      <div className="imageContainer">
-        <img src="https://placehold.co/500x400" alt="" />
       </div>
     </div>
   )
