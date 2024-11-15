@@ -16,11 +16,12 @@ const Navbar = () => {
         </motion.span>
         <div className="social">
           <motion.a
-            href="#"
             initial={{ opacity: 0, scale: 0.5 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 1 }}
-            whileHover={{ scale: 1.3, color: "rgb(95, 93, 93)" }}
+            whileHover={{ scale: 1.3, color: "rgb(95, 93, 93)", transition: 1 }}
+            target="blank"
+            href="https://github.com/MatheusZamo"
           >
             <iconify-icon
               icon="mdi:github"
@@ -29,11 +30,15 @@ const Navbar = () => {
             ></iconify-icon>
           </motion.a>
           <motion.a
-            href="#"
+            href="https://www.linkedin.com/in/matheuszamo/"
             initial={{ opacity: 0, scale: 0.5 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 1 }}
-            whileHover={{ scale: 1.3, color: "rgb(3, 110, 253)" }}
+            whileHover={{
+              scale: 1.3,
+              color: "rgb(3, 110, 253)",
+              transition: 1,
+            }}
           >
             <iconify-icon
               icon="mdi:linkedin"
@@ -42,11 +47,15 @@ const Navbar = () => {
             ></iconify-icon>
           </motion.a>
           <motion.a
-            href="#"
+            href="https://www.instagram.com/matheus.zamo/"
             initial={{ opacity: 0, scale: 0.5 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 1 }}
-            whileHover={{ scale: 1.4, color: "rgb(230, 42, 105)" }}
+            whileHover={{
+              scale: 1.4,
+              color: "rgb(230, 42, 105)",
+              transition: 1,
+            }}
           >
             <iconify-icon
               icon="mdi:instagram"
