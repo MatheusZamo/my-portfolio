@@ -17,11 +17,16 @@
     }
 
     span {
-      font-weight: bold;
+      color: white;
+      font-size: 25px;
 
       @include mobile {
         display: none;
       }
+    }
+
+    .blue {
+      color: rgb(3, 110, 253);
     }
 
     .social {

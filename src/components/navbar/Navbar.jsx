@@ -12,7 +12,7 @@ const Navbar = () => {
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 1 }}
         >
-          Matheus | Dev
+          MH <span className="blue">| Dev.</span>
         </motion.span>
         <div className="social">
           <motion.a
@@ -20,6 +20,7 @@ const Navbar = () => {
             initial={{ opacity: 0, scale: 0.5 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 1 }}
+            whileHover={{ scale: 1.3, color: "rgb(95, 93, 93)" }}
           >
             <iconify-icon
               icon="mdi:github"
@@ -32,6 +33,7 @@ const Navbar = () => {
             initial={{ opacity: 0, scale: 0.5 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 1 }}
+            whileHover={{ scale: 1.3, color: "rgb(3, 110, 253)" }}
           >
             <iconify-icon
               icon="mdi:linkedin"
@@ -44,6 +46,7 @@ const Navbar = () => {
             initial={{ opacity: 0, scale: 0.5 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 1 }}
+            whileHover={{ scale: 1.4, color: "rgb(230, 42, 105)" }}
           >
             <iconify-icon
               icon="mdi:instagram"
