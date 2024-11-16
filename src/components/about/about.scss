@@ -1,0 +1,73 @@
+.about {
+  background: #050505 !important;
+  height: 100%;
+
+  h1 {
+    text-align: center;
+    font-size: 40px;
+    color: rgb(3, 110, 253);
+  }
+}
+
+.about-me {
+  width: 70%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+  margin-left: 250px;
+}
+
+.p-about {
+  font-size: 18px;
+  margin-left: 100px;
+}
+
+.skills {
+  display: flex;
+}
+
+.div-skills {
+  width: 40%;
+  height: 300px;
+  margin-left: 70px;
+  margin-top: 30px;
+}
+
+.p-skills {
+  font-size: 18px;
+  margin-top: 10px;
+}
+
+.title-skills {
+  color: rgb(3, 110, 253);
+  font-size: 30px;
+}
+
+ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  width: 40%;
+  margin-left: 90px;
+  margin-bottom: 70px;
+}
+
+li {
+  width: 33%;
+  cursor: pointer;
+}
+
+.p-css {
+  margin-left: 15px;
+  font-size: 18px;
+}
+.p-icon {
+  margin-left: 8px;
+  font-size: 18px;
+}
+
+.p-js,
+.p-bot {
+  font-size: 18px;
+}
