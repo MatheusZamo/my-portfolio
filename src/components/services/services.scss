@@ -1,7 +1,7 @@
 @import "../../app.scss";
 
 .services {
-  background: linear-gradient(180deg, #0c0c1d, #111132);
+  background: #050505 !important;
   height: 100%;
   display: flex;
   flex-direction: column;
@@ -86,10 +86,9 @@
         width: 250px;
         height: 60px;
         border-radius: 50px;
-        background-color: orange;
+        background-color: rgb(3, 110, 253);
         border: none;
         font-size: 20px;
-        cursor: pointer;
 
         @include mobile {
           font-size: 16px;
@@ -149,4 +148,13 @@
       }
     }
   }
+}
+
+.icon-services {
+  color: rgb(3, 110, 253);
+  text-align: center;
+}
+
+.title-service {
+  text-align: center;
 }

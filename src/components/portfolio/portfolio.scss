@@ -9,7 +9,7 @@
     left: 0;
     padding-top: 50px;
     text-align: center;
-    color: orange;
+    color: rgb(3, 110, 253);
     font-size: 36px;
 
     @include mobile {
@@ -106,7 +106,7 @@
         }
 
         button {
-          background-color: orange;
+          background-color: rgb(3, 110, 253);
           border: none;
           border-radius: 10px;
           padding: 10px;

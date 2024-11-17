@@ -29,7 +29,7 @@ const Services = () => {
       variants={variants}
       initial="initial"
       ref={ref}
-      //isInView &&
+      //isInView
       animate={"animate"}
     >
       <motion.div className="textContainer" variants={variants}>
@@ -43,12 +43,17 @@ const Services = () => {
         <div className="title">
           <img src="/people.webp" alt="" />
           <h1>
-            <motion.b whileHover={{ color: "orange" }}>Ideias</motion.b> Únicas
+            <motion.b whileHover={{ color: "rgb(3, 110, 253)" }}>
+              Ideias
+            </motion.b>{" "}
+            Únicas
           </h1>
         </div>
         <div className="title">
           <h1>
-            <motion.b whileHover={{ color: "orange" }}>Para o seu</motion.b>{" "}
+            <motion.b whileHover={{ color: "rgb(3, 110, 253)" }}>
+              Para o seu
+            </motion.b>{" "}
             Negócio
           </h1>
           <button>Meus serviços</button>
@@ -59,45 +64,69 @@ const Services = () => {
           className="box"
           whileHover={{ background: "lightgray", color: "black" }}
         >
-          <h2>Landing Pages</h2>
+          <h2 className="title-service">Sites Sob Medida</h2>
+          <div className="icon-services">
+            <iconify-icon
+              icon="la:laptop-code"
+              width="6em"
+              height="6em"
+            ></iconify-icon>
+          </div>
           <p>
-            Landing pages que convertem visitantes em clientes, otimizadas para
-            diferentes plataformas e objetivos de negócio.
+            Sites que convertem visitantes em clientes, crio soluções digitais
+            personalizadas para impulsionar o seu sucesso online.
           </p>
-          <button>Go</button>
         </motion.div>
         <motion.div
           className="box"
           whileHover={{ background: "lightgray", color: "black" }}
         >
-          <h2>Suporte</h2>
+          <h2 className="title-service">Suporte</h2>
+          <div className="icon-services">
+            <iconify-icon
+              icon="basil:headset-solid"
+              width="6em"
+              height="6em"
+            ></iconify-icon>
+          </div>
           <p>
             Ofereço suporte técnico personalizado e eficiente para garantir o
             bom funcionamento dos sistemas desenvolvidos.
           </p>
-          <button>Go</button>
         </motion.div>
         <motion.div
           className="box"
           whileHover={{ background: "lightgray", color: "black" }}
         >
-          <h2>Personalização</h2>
+          <h2 className="title-service">Personalização</h2>
+          <div className="icon-services">
+            <iconify-icon
+              icon="vaadin:tools"
+              width="5em"
+              height="5em"
+            ></iconify-icon>
+          </div>
           <p>
             Adapto e otimizo soluções existentes para atender às necessidades
             específicas de cada cliente, garantindo a melhor experiência de uso.
           </p>
-          <button>Go</button>
         </motion.div>
         <motion.div
           className="box"
           whileHover={{ background: "lightgray", color: "black" }}
         >
-          <h2>Estratégias de SEO</h2>
+          <h2 className="title-service">Estratégias de SEO</h2>
+          <div className="icon-services">
+            <iconify-icon
+              icon="ri:seo-line"
+              width="6em"
+              height="6em"
+            ></iconify-icon>
+          </div>
           <p>
             Otimizo sites para mecanismos de busca , garantindo maior
             visibilidade e mais tráfego orgânico para o seu negócio.
           </p>
-          <button>Go</button>
         </motion.div>
       </motion.div>
     </motion.div>
