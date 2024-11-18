@@ -113,7 +113,7 @@ const Contact = () => {
       </motion.div>
       <div className="formContainer">
         <form ref={formRef} onSubmit={sendEmail}>
-          <input type="text" required placeholder="Name" name="name" />
+          <input type="text" required placeholder="Nome" name="name" />
           <input
             type="number"
             required
@@ -126,7 +126,7 @@ const Contact = () => {
             placeholder="Descreva um pouco sobre o seu projeto"
             name="message"
           ></textarea>
-          <button>Enviar</button>
+          <button>Enviar Mensagem</button>
           {/* {error && "Error"}
           {success && "Success"} */}
         </form>
