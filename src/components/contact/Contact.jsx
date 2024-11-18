@@ -47,23 +47,79 @@ const Contact = () => {
       whileInView="animate"
     >
       <motion.div className="textContainer" variants={variants}>
-        <motion.h1 variants={variants}>Vamos trabalhar juntos</motion.h1>
+        <h2>Vamos conversar</h2>
+        <motion.h1 variants={variants}>Entre em contato</motion.h1>
         <motion.div className="item" variants={variants}>
-          <h2>Email</h2>
-          <span>19matheushenrique03@gmail.com</span>
+          <h2>Contate-me</h2>
+          <p>Email: 19matheushenrique03@gmail.com</p>
+          <p>Localização: Belo Horizonte, Minas Gerais - Brasil</p>
         </motion.div>
-        <motion.div className="item" variants={variants}>
-          <h2>Localização</h2>
-          <span>Belo Horizonte, Minas Gerais - Brasil</span>
-        </motion.div>
-        <motion.div className="item" variants={variants}>
-          <h2>Telefone</h2>
-          <span>3112345678</span>
+        <motion.div className="item rede-sociais" variants={variants}>
+          <h2 className="sociais">Redes Sociais</h2>
+          <motion.a
+            initial={{ opacity: 0, scale: 0.5 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 1 }}
+            whileHover={{ scale: 1.3, color: "rgb(95, 93, 93)", transition: 1 }}
+            target="blank"
+            href="https://github.com/MatheusZamo"
+            className="sociais"
+          >
+            <iconify-icon
+              icon="mdi:github"
+              width="1.5em"
+              height="1.5em"
+            ></iconify-icon>
+          </motion.a>
+          <motion.a
+            href="https://www.linkedin.com/in/matheuszamo/"
+            initial={{ opacity: 0, scale: 0.5 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 1 }}
+            whileHover={{
+              scale: 1.3,
+              color: "rgb(3, 110, 253)",
+              transition: 1,
+            }}
+            target="blank"
+            className="sociais"
+          >
+            <iconify-icon
+              icon="mdi:linkedin"
+              width="1.5em"
+              height="1.5em"
+            ></iconify-icon>
+          </motion.a>
+          <motion.a
+            href="https://www.instagram.com/matheus.zamo/"
+            initial={{ opacity: 0, scale: 0.5 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 1 }}
+            whileHover={{
+              scale: 1.4,
+              color: "rgb(230, 42, 105)",
+              transition: 1,
+            }}
+            target="blank"
+            className="sociais"
+          >
+            <iconify-icon
+              icon="mdi:instagram"
+              width="1.5em"
+              height="1.5em"
+            ></iconify-icon>
+          </motion.a>
         </motion.div>
       </motion.div>
       <div className="formContainer">
         <form ref={formRef} onSubmit={sendEmail}>
           <input type="text" required placeholder="Name" name="name" />
+          <input
+            type="number"
+            required
+            placeholder="Whatsapp"
+            name="whatsapp"
+          />
           <input type="email" required placeholder="Email" name="email" />
           <textarea
             rows={8}
