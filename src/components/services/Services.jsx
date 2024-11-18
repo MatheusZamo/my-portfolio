@@ -1,45 +1,57 @@
-import { useRef } from "react"
-import { motion, useInView } from "framer-motion"
+import { motion } from "framer-motion"
 import "./services.scss"
 
-const variants = {
+const message = {
   initial: {
-    x: -500,
-    y: 100,
+    x: -100,
     opacity: 0,
   },
   animate: {
     x: 0,
     opacity: 1,
-    y: 0,
     transition: {
-      duration: 1,
+      duration: 0.5,
+      staggerChildren: 0.1,
+    },
+  },
+}
+
+const variants = {
+  initial: {
+    y: 200,
+    opacity: 0,
+  },
+  animate: {
+    y: 0,
+    opacity: 1,
+    transition: {
+      duration: 0.5,
       staggerChildren: 0.1,
     },
   },
 }
 
 const Services = () => {
-  const ref = useRef()
-
-  const isInView = useInView(ref, { margin: "-100px" })
   return (
-    <motion.div
-      className="services"
-      variants={variants}
-      initial="initial"
-      ref={ref}
-      //isInView
-      animate={"animate"}
-    >
-      <motion.div className="textContainer" variants={variants}>
+    <div className="services">
+      <motion.div
+        className="textContainer"
+        variants={message}
+        whileInView="animate"
+        initial="initial"
+      >
         <p className="textMessage">
           Meu foco é impulsionar o crescimento
           <br />E desenvolvimento da sua marca.
         </p>
         <hr />
       </motion.div>
-      <motion.div className="titleContainer" variants={variants}>
+      <motion.div
+        className="titleContainer"
+        variants={variants}
+        whileInView="animate"
+        initial="initial"
+      >
         <div className="title">
           <img src="/people.webp" alt="" />
           <h1>
@@ -59,7 +71,12 @@ const Services = () => {
           <button>Meus serviços</button>
         </div>
       </motion.div>
-      <motion.div className="listContainer" variants={variants}>
+      <motion.div
+        className="listContainer"
+        variants={variants}
+        whileInView="animate"
+        initial="initial"
+      >
         <motion.div
           className="box"
           whileHover={{ background: "lightgray", color: "black" }}
@@ -129,7 +146,7 @@ const Services = () => {
           </p>
         </motion.div>
       </motion.div>
-    </motion.div>
+    </div>
   )
 }
 
