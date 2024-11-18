@@ -2,23 +2,36 @@ import "./navbar.scss"
 import { motion } from "framer-motion"
 import { Sidebar } from "../sidebar/Sidebar"
 
+const variants = {
+  initial: {
+    y: -500,
+    opacity: 0,
+  },
+  animate: {
+    y: 0,
+    opacity: 1,
+    transition: {
+      duration: 0.5,
+      staggerChildren: 0.1,
+    },
+  },
+}
+
 const Navbar = () => {
   return (
     <div className="navbar">
       <Sidebar />
       <div className="wrapper">
-        <motion.span
-          initial={{ opacity: 0, scale: 0.5 }}
-          animate={{ opacity: 1, scale: 1 }}
-          transition={{ duration: 1 }}
-        >
+        <motion.span initial="initial" animate="animate" variants={variants}>
           MH <span className="blue">| Dev.</span>
         </motion.span>
-        <div className="social">
+        <motion.div
+          className="social"
+          variants={variants}
+          initial="initial"
+          animate="animate"
+        >
           <motion.a
-            initial={{ opacity: 0, scale: 0.5 }}
-            animate={{ opacity: 1, scale: 1 }}
-            transition={{ duration: 1 }}
             whileHover={{ scale: 1.3, color: "rgb(95, 93, 93)", transition: 1 }}
             target="blank"
             href="https://github.com/MatheusZamo"
@@ -31,9 +44,6 @@ const Navbar = () => {
           </motion.a>
           <motion.a
             href="https://www.linkedin.com/in/matheuszamo/"
-            initial={{ opacity: 0, scale: 0.5 }}
-            animate={{ opacity: 1, scale: 1 }}
-            transition={{ duration: 1 }}
             whileHover={{
               scale: 1.3,
               color: "rgb(3, 110, 253)",
@@ -48,9 +58,6 @@ const Navbar = () => {
           </motion.a>
           <motion.a
             href="https://www.instagram.com/matheus.zamo/"
-            initial={{ opacity: 0, scale: 0.5 }}
-            animate={{ opacity: 1, scale: 1 }}
-            transition={{ duration: 1 }}
             whileHover={{
               scale: 1.4,
               color: "rgb(230, 42, 105)",
@@ -63,7 +70,7 @@ const Navbar = () => {
               height="1.5em"
             ></iconify-icon>
           </motion.a>
-        </div>
+        </motion.div>
       </div>
     </div>
   )

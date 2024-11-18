@@ -3,13 +3,17 @@ import { motion } from "framer-motion"
 import { TypeWriter } from "../text-animate/text-animate"
 import { HomeAnimation } from "../home-animation/home-animation"
 
-const textVariants = {
-  scrollButton: {
+const variants = {
+  initial: {
+    x: -500,
     opacity: 0,
-    y: 10,
+  },
+  animate: {
+    x: 0,
+    opacity: 1,
     transition: {
-      duration: 2,
-      repeat: Infinity,
+      duration: 0.5,
+      staggerChildren: 0.1,
     },
   },
 }
@@ -19,15 +23,14 @@ const Hero = () => {
     <div className="hero">
       <div className="wrapper">
         <div className="textContainer">
-          <h1>Matheus Henrique</h1>
+          <motion.h1
+            variants={variants}
+            initial="initial"
+            whileInView="animate"
+          >
+            Matheus Henrique
+          </motion.h1>
           <TypeWriter value="Freelancer" />
-          <motion.img
-            animate="scrollButton"
-            variants={textVariants}
-            className="imgButton"
-            src="scroll.png"
-            alt=""
-          />
           <div className="animation">
             <HomeAnimation />
           </div>
