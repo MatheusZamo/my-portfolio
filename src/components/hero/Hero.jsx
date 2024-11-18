@@ -5,7 +5,7 @@ import { HomeAnimation } from "../home-animation/home-animation"
 
 const variants = {
   initial: {
-    x: -500,
+    x: -200,
     opacity: 0,
   },
   animate: {
