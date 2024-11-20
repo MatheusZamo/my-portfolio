@@ -5,6 +5,10 @@
   overflow: hidden;
   background: #050505 !important;
 
+  @include mobile {
+    height: 10px;
+  }
+
   .wrapper {
     max-width: 1066px;
     height: 100%;

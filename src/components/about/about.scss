@@ -1,6 +1,12 @@
+@import "../../app.scss";
+
 .about {
   background: #050505 !important;
   height: 100%;
+
+  @include mobile {
+    height: 1px;
+  }
 
   h1 {
     text-align: center;
@@ -16,6 +22,11 @@
   align-items: center;
   margin-top: 20px;
   margin-left: 250px;
+
+  @include mobile {
+    flex-direction: column;
+    margin-left: 1px;
+  }
 }
 
 .p-about {
@@ -25,6 +36,10 @@
 
 .skills {
   display: flex;
+
+  @include mobile {
+    flex-direction: column;
+  }
 }
 
 .div-skills {

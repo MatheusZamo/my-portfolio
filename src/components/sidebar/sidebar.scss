@@ -17,11 +17,6 @@
     width: 400px;
     background: white;
 
-    @include mobile {
-      width: 50%;
-      margin-bottom: 850px;
-    }
-
     .links {
       position: absolute;
       width: 100%;

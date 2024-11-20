@@ -1,4 +1,15 @@
+@import "../../app.scss";
+
 .animation {
   margin-left: 750px;
   margin-bottom: 200px;
+
+  @include mobile {
+    // height: 200px;
+    // margin-top: 750px;
+    // margin-right: 197px;
+    // position: absolute;
+    // width: 200px;
+    display: none;
+  }
 }
