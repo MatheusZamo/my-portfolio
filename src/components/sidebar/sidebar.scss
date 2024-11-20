@@ -18,7 +18,8 @@
     background: white;
 
     @include mobile {
-      width: 100%;
+      width: 50%;
+      margin-bottom: 850px;
     }
 
     .links {
