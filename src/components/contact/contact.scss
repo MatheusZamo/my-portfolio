@@ -50,10 +50,30 @@
     p {
       margin-top: 20px;
       font-size: 20px;
+
+      @include mobile {
+        font-size: 15px;
+      }
     }
 
     span {
       font-weight: 300;
+    }
+  }
+}
+
+.info-contact {
+  display: flex;
+
+  @include mobile {
+    justify-content: center;
+  }
+
+  span {
+    margin-top: 18px;
+
+    @include mobile {
+      margin-top: 15px;
     }
   }
 }

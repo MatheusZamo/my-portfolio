@@ -51,7 +51,7 @@ const Contact = () => {
         <motion.h1 variants={variants}>Entre em contato</motion.h1>
         <motion.div className="item" variants={variants}>
           <h2>Contate-me</h2>
-          <p>
+          <div className="info-contact">
             <span className="icon-contact">
               <iconify-icon
                 icon="ic:round-email"
@@ -59,9 +59,9 @@ const Contact = () => {
                 height="1.5em"
               ></iconify-icon>
             </span>
-            Email: 19matheushenrique03@gmail.com
-          </p>
-          <p>
+            <p>Email: 19matheushenrique03@gmail.com</p>
+          </div>
+          <div className="info-contact">
             <span className="icon-contact">
               <iconify-icon
                 icon="mdi:location"
@@ -69,8 +69,8 @@ const Contact = () => {
                 height="1.5em"
               ></iconify-icon>
             </span>
-            Localização: Belo Horizonte, Minas Gerais - Brasil
-          </p>
+            <p>Localização: Belo Horizonte, Minas Gerais - Brasil</p>
+          </div>
         </motion.div>
         <motion.div className="item rede-sociais" variants={variants}>
           <h2 className="sociais">Redes Sociais</h2>

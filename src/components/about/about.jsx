@@ -97,7 +97,7 @@ const About = () => {
               width="4em"
               height="4em"
             ></iconify-icon>
-            <p className="p-icon">React Js</p>
+            <p className="p-icon">React</p>
           </li>
           <li>
             <iconify-icon
@@ -105,7 +105,7 @@ const About = () => {
               width="4em"
               height="4em"
             ></iconify-icon>
-            <p className="p-icon">Next Js</p>
+            <p className="p-icon">Next</p>
           </li>
           <li>
             <iconify-icon
