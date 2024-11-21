@@ -20,10 +20,8 @@
     flex-direction: column;
 
     @include mobile {
-      gap: 20px;
       text-align: center;
       align-items: center;
-      margin-top: 70px;
     }
 
     h1 {

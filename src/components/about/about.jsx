@@ -19,7 +19,7 @@ const skills = {
 
 const about = {
   initial: {
-    x: 120,
+    x: 32,
     opacity: 0,
   },
   animate: {

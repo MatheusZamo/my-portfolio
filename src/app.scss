@@ -42,3 +42,9 @@ section {
     @content;
   }
 }
+
+html {
+  @include mobile {
+    scroll-snap-type: none;
+  }
+}
