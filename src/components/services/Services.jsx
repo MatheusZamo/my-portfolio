@@ -46,12 +46,7 @@ const Services = () => {
         </p>
         <hr />
       </motion.div>
-      <motion.div
-        className="titleContainer"
-        variants={variants}
-        whileInView="animate"
-        initial="initial"
-      >
+      <motion.div className="titleContainer" variants={variants}>
         <div className="title">
           <img src="/people.webp" alt="" />
           <h1>
@@ -77,10 +72,7 @@ const Services = () => {
         whileInView="animate"
         initial="initial"
       >
-        <motion.div
-          className="box"
-          whileHover={{ background: "lightgray", color: "black" }}
-        >
+        <motion.div className="box">
           <h2 className="title-service">Sites Sob Medida</h2>
           <div className="icon-services">
             <iconify-icon
@@ -94,10 +86,7 @@ const Services = () => {
             personalizadas para impulsionar o seu sucesso online.
           </p>
         </motion.div>
-        <motion.div
-          className="box"
-          whileHover={{ background: "lightgray", color: "black" }}
-        >
+        <motion.div className="box">
           <h2 className="title-service">Suporte</h2>
           <div className="icon-services">
             <iconify-icon
@@ -111,10 +100,7 @@ const Services = () => {
             bom funcionamento dos sistemas desenvolvidos.
           </p>
         </motion.div>
-        <motion.div
-          className="box"
-          whileHover={{ background: "lightgray", color: "black" }}
-        >
+        <motion.div className="box">
           <h2 className="title-service">Personalização</h2>
           <div className="icon-services">
             <iconify-icon
@@ -128,10 +114,7 @@ const Services = () => {
             específicas de cada cliente, garantindo a melhor experiência de uso.
           </p>
         </motion.div>
-        <motion.div
-          className="box"
-          whileHover={{ background: "lightgray", color: "black" }}
-        >
+        <motion.div className="box">
           <h2 className="title-service">Estratégias de SEO</h2>
           <div className="icon-services">
             <iconify-icon

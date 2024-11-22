@@ -3,6 +3,10 @@
 .portfolio {
   position: relative;
 
+  @include mobile {
+    margin-top: 200px;
+  }
+
   .progress {
     position: sticky;
     top: 0;
@@ -13,8 +17,7 @@
     font-size: 36px;
 
     @include mobile {
-      padding-top: calc(100vh - 300px);
-      font-size: 24px;
+      display: none;
     }
 
     .progressBar {
@@ -30,6 +33,18 @@
     @include mobile {
       font-size: 30px;
       margin-top: 220px;
+    }
+  }
+
+  .titleMobile {
+    display: none;
+
+    @include mobile {
+      display: flex;
+      margin-left: 35px;
+      margin-bottom: 20px;
+      font-size: 30px;
+      color: rgb(3, 110, 253);
     }
   }
 
