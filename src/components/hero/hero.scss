@@ -36,13 +36,14 @@
     font-weight: 100;
     position: absolute;
     top: 55%;
-    margin-right: 730px;
+    margin-right: 680px;
 
     @include mobile {
       display: flex;
       margin-right: 1px;
-      margin-left: 60px;
+      margin-left: 65px;
       font-size: 20px;
+      top: 50%;
     }
   }
 
@@ -56,11 +57,12 @@
     position: absolute;
     top: 35%;
     width: 60%;
-    margin-right: 400px;
+    margin-right: 350px;
 
     @include mobile {
       font-size: 42px;
-      margin-left: 520px;
+      margin-left: 480px;
+      top: 30%;
     }
   }
 

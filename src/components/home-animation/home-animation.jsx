@@ -21,8 +21,8 @@ const HomeAnimation = () => {
     <div>
       <Lottie
         options={defaultOptions}
-        height={500}
-        width={500}
+        height={400}
+        width={400}
         isStopped={animation.isStopped}
         isPaused={animation.isPaused}
       />
