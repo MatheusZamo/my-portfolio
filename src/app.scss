@@ -31,12 +31,6 @@ section {
   }
 }
 
-@mixin tablet {
-  @media (max-width: 900px) {
-    @content;
-  }
-}
-
 @mixin desktop {
   @media (max-width: 1300px) {
     @content;
@@ -45,10 +39,6 @@ section {
 
 html {
   @include mobile {
-    scroll-snap-type: none;
-  }
-
-  @include tablet {
     scroll-snap-type: none;
   }
 }
