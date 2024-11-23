@@ -16,12 +16,21 @@
       padding: 20px;
     }
 
+    @include tablet {
+      justify-content: flex-end;
+      padding: 20px;
+    }
+
     span {
       font-weight: bold;
       color: white;
       font-size: 25px;
 
       @include mobile {
+        display: none;
+      }
+
+      @include tablet {
         display: none;
       }
     }

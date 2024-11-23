@@ -47,4 +47,8 @@ html {
   @include mobile {
     scroll-snap-type: none;
   }
+
+  @include tablet {
+    scroll-snap-type: none;
+  }
 }
