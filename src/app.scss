@@ -42,3 +42,18 @@ html {
     scroll-snap-type: none;
   }
 }
+
+::-webkit-scrollbar-track {
+  background-color: #212121;
+  border-radius: 10px;
+}
+::-webkit-scrollbar {
+  width: 5px;
+  background: #212121;
+  height: 6px;
+  border-radius: 10px;
+}
+::-webkit-scrollbar-thumb {
+  background: #065ee2ed;
+  border-radius: 10px;
+}
