@@ -36,18 +36,6 @@
     }
   }
 
-  .titleMobile {
-    display: none;
-
-    @include mobile {
-      display: flex;
-      margin-left: 30px;
-      margin-bottom: 20px;
-      font-size: 30px;
-      color: rgb(3, 110, 253);
-    }
-  }
-
   .container {
     display: flex;
     align-items: center;

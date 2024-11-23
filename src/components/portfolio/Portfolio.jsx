@@ -71,7 +71,6 @@ const Portfolio = () => {
         <h2 className="titlePortfolio">Projetos em Destaques</h2>
         <motion.div style={{ scaleX }} className="progressBar"></motion.div>
       </div>
-      <h2 className="titleMobile">Projetos em Destaques</h2>
       {items.map((item) => (
         <Single item={item} key={item.id} />
       ))}
