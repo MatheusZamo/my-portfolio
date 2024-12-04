@@ -5,27 +5,31 @@ import "./portfolio.scss"
 const items = [
   {
     id: 1,
-    title: "React Commerce",
-    img: "https://placehold.co/500x400",
-    desc: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since",
+    title: "Burger House",
+    img: "burger-house.png",
+    desc: "Com um design moderno e intuitivo, a landing page destaca os melhores produtos. Além disso ela e otimizada para conversão direciona, como realizar pedidos ou fazer reservas.",
+    link: "https://burger-house-official.netlify.app",
   },
   {
     id: 1,
     title: "Next Js Blog",
     img: "https://placehold.co/500x400",
     desc: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since",
+    link: "#",
   },
   {
     id: 1,
     title: "Netflix Clone",
     img: "https://placehold.co/500x400",
     desc: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since",
+    link: "#",
   },
   {
     id: 1,
     title: "Music App",
     img: "https://placehold.co/500x400",
     desc: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since",
+    link: "#",
   },
 ]
 
@@ -48,7 +52,10 @@ const Single = ({ item }) => {
           <motion.div className="textContainer" style={{ y }}>
             <h2>{item.title}</h2>
             <p>{item.desc}</p>
-            <button>Acessar</button>
+
+            <a href={item.link} target="blank">
+              Acessar
+            </a>
           </motion.div>
         </div>
       </div>

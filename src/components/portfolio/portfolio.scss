@@ -71,6 +71,7 @@
           width: 100%;
           height: 100%;
           object-fit: cover;
+          border-radius: 20px;
 
           @include mobile {
             object-fit: contain;
@@ -108,8 +109,10 @@
           }
         }
 
-        button {
+        a {
           background-color: rgb(3, 110, 253);
+          color: white;
+          text-align: center;
           border: none;
           border-radius: 10px;
           padding: 10px;
