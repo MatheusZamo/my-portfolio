@@ -79,25 +79,6 @@ const Single = ({ item }) => {
                     />
                   )
                 })}
-                {/* <Icon
-                  icon="ri:reactjs-fill"
-                  width="30"
-                  height="30"
-                  className="icon"
-                />
-                <Icon icon="cib:js" width="30" height="30" className="icon" />
-                <Icon
-                  icon="flowbite:css-solid"
-                  width="31"
-                  height="31"
-                  className="icon"
-                />
-                <Icon
-                  icon="flowbite:html-solid"
-                  width="31"
-                  height="31"
-                  className="icon"
-                /> */}
               </div>
             </div>
           </motion.div>
