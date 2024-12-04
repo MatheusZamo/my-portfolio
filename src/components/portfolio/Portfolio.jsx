@@ -1,5 +1,6 @@
 import { useRef } from "react"
 import { motion, useScroll, useSpring, useTransform } from "framer-motion"
+import { Icon } from "@iconify/react"
 import "./portfolio.scss"
 
 const items = [
@@ -9,6 +10,12 @@ const items = [
     img: "burger-house.png",
     desc: "Com um design moderno e intuitivo, a landing page destaca os melhores produtos. Além disso ela e otimizada para conversão direciona, como realizar pedidos ou fazer reservas.",
     link: "https://burger-house-official.netlify.app",
+    icons: [
+      { icon: "ri:reactjs-fill", width: 30, height: 30 },
+      { icon: "cib:js", width: 30, height: 30 },
+      { icon: "flowbite:css-solid", width: 31, height: 31 },
+      { icon: "flowbite:html-solid", width: 31, height: 31 },
+    ],
   },
   {
     id: 1,
@@ -16,6 +23,7 @@ const items = [
     img: "https://placehold.co/500x400",
     desc: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since",
     link: "#",
+    icons: [],
   },
   {
     id: 1,
@@ -23,6 +31,7 @@ const items = [
     img: "https://placehold.co/500x400",
     desc: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since",
     link: "#",
+    icons: [],
   },
   {
     id: 1,
@@ -30,6 +39,7 @@ const items = [
     img: "https://placehold.co/500x400",
     desc: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since",
     link: "#",
+    icons: [],
   },
 ]
 
@@ -52,10 +62,44 @@ const Single = ({ item }) => {
           <motion.div className="textContainer" style={{ y }}>
             <h2>{item.title}</h2>
             <p>{item.desc}</p>
-
-            <a href={item.link} target="blank">
-              Acessar
-            </a>
+            <div className="linkAndIcons">
+              <a href={item.link} target="blank">
+                Acessar
+              </a>
+              <div className="icons">
+                {item?.icons?.map((i, index) => {
+                  console.log(i?.icon)
+                  return (
+                    <Icon
+                      key={index + 1}
+                      icon={i.icon}
+                      width={i.width}
+                      height={i.height}
+                      className="icon"
+                    />
+                  )
+                })}
+                {/* <Icon
+                  icon="ri:reactjs-fill"
+                  width="30"
+                  height="30"
+                  className="icon"
+                />
+                <Icon icon="cib:js" width="30" height="30" className="icon" />
+                <Icon
+                  icon="flowbite:css-solid"
+                  width="31"
+                  height="31"
+                  className="icon"
+                />
+                <Icon
+                  icon="flowbite:html-solid"
+                  width="31"
+                  height="31"
+                  className="icon"
+                /> */}
+              </div>
+            </div>
           </motion.div>
         </div>
       </div>

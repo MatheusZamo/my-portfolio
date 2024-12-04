@@ -109,6 +109,17 @@
           }
         }
 
+        .linkAndIcons {
+          display: flex;
+        }
+
+        .icons {
+          margin-left: 20px;
+        }
+        .icon {
+          margin-right: 2px;
+        }
+
         a {
           background-color: rgb(3, 110, 253);
           color: white;
