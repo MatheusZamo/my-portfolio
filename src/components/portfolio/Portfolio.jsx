@@ -32,12 +32,17 @@ const items = [
     ],
   },
   {
-    id: 1,
-    title: "Netflix Clone",
-    img: "https://placehold.co/500x400",
-    desc: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since",
-    link: "#",
-    icons: [],
+    id: 3,
+    title: "Fit Genesis",
+    img: "fit-genesis.png",
+    desc: "Landing Page onde você encontra informações sobre aulas personalizadas, acesso a equipamentos de última geração e dicas de profissionais para maximizar seus resultados!",
+    link: "https://fit-genesis.netlify.app/",
+    icons: [
+      { icon: "ri:reactjs-fill", width: 30, height: 30 },
+      { icon: "cib:js", width: 30, height: 30 },
+      { icon: "flowbite:css-solid", width: 31, height: 31 },
+      { icon: "flowbite:html-solid", width: 31, height: 31 },
+    ],
   },
   {
     id: 1,
