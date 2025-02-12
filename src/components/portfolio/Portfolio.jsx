@@ -18,12 +18,18 @@ const items = [
     ],
   },
   {
-    id: 1,
-    title: "Next Js Blog",
-    img: "https://placehold.co/500x400",
-    desc: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since",
-    link: "#",
-    icons: [],
+    id: 2,
+    title: "Viajou Anotou",
+    img: "viajou-anotou.png",
+    desc: "O Viajou Anotou permite aos usuários registrarem suas viagens de forma interativa. O usuário pode selecionar cidades no mapa, adicionar datas e notas sobre cada viagem e visualizar um histórico completo das localidades visitadas.",
+    link: "https://viajou-anotou-mz.netlify.app/",
+    icons: [
+      { icon: "devicon-plain:reactrouter", width: 30, height: 30 },
+      { icon: "ri:reactjs-fill", width: 30, height: 30 },
+      { icon: "cib:js", width: 30, height: 30 },
+      { icon: "flowbite:css-solid", width: 31, height: 31 },
+      { icon: "flowbite:html-solid", width: 31, height: 31 },
+    ],
   },
   {
     id: 1,
@@ -68,10 +74,9 @@ const Single = ({ item }) => {
               </a>
               <div className="icons">
                 {item?.icons?.map((i, index) => {
-                  console.log(i?.icon)
                   return (
                     <Icon
-                      key={index + 1}
+                      key={index}
                       icon={i.icon}
                       width={i.width}
                       height={i.height}
