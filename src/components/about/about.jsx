@@ -80,9 +80,9 @@ const About = () => {
           <p className="p-skills">
             Sou especialista em desenvolvimento web front-end, com domínio
             sólido em Html, Css e JavaScript. Conhecimentos em bibliotecas e
-            frameworks como React Js, Next Js, Bootstrap e Materialize, me
-            permite criar interfaces de usuário modernas, responsivas e
-            interativas, garantindo uma excelente experiência do usuário.
+            frameworks como React Js, Next Js e Tailwindcss, me permitem criar
+            interfaces de usuário modernas, responsivas e interativas,
+            garantindo uma excelente experiência do usuário.
           </p>
         </motion.div>
         <motion.ul
@@ -133,11 +133,12 @@ const About = () => {
           </li>
           <li>
             <iconify-icon
-              icon="mdi:bootstrap"
-              width="4em"
-              height="4em"
+              icon="mdi:tailwind"
+              width="4rem"
+              height="4rem"
+              className="icon-tailwind"
             ></iconify-icon>
-            <p className="icon-bot">Bootstrap</p>
+            <p className="icon-tailwind">Tailwind</p>
           </li>
         </motion.ul>
       </div>

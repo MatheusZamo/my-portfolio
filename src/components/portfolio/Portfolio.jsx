@@ -6,10 +6,10 @@ import "./portfolio.scss"
 const items = [
   {
     id: 1,
-    title: "Burger House",
-    img: "burger-house.png",
-    desc: "Com um design moderno e intuitivo, a landing page destaca os melhores produtos. Além disso ela e otimizada para conversão direciona, como realizar pedidos ou fazer reservas.",
-    link: "https://burger-house-official.netlify.app",
+    title: "Next Level",
+    img: "next.png",
+    desc: "Bem-vindo ao Next Level, um e-commerce de games focado na venda de jogos e consoles! 🕹️🔥",
+    link: "https://ecommerce-roan-eta-38.vercel.app/",
     icons: [
       { icon: "ri:reactjs-fill", width: 30, height: 30 },
       { icon: "cib:js", width: 30, height: 30 },
@@ -46,10 +46,10 @@ const items = [
   },
   {
     id: 1,
-    title: "Music App",
-    img: "https://placehold.co/500x400",
-    desc: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since",
-    link: "#",
+    title: "McDonald's",
+    img: "mcdonalds.png",
+    desc: "Este projeto é um sistema de Self Checkout inspirado nos totens de auto-atendimento do McDonald's, onde o usuário pode realizar seu pedido de forma dinâmica e intuitiva.",
+    link: "https://self-checkout-rust.vercel.app/mcdonalds",
     icons: [],
   },
 ]
