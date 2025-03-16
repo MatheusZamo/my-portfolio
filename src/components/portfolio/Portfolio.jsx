@@ -6,51 +6,56 @@ import "./portfolio.scss"
 const items = [
   {
     id: 1,
-    title: "Next Level",
-    img: "2.png",
-    desc: "Bem-vindo ao Next Level, um e-commerce de games focado na venda de jogos e consoles! 🕹️🔥",
-    link: "https://ecommerce-roan-eta-38.vercel.app/",
+    title: "Self Checkout",
+    img: "self.png",
+    type: "Sistema Web",
+    desc: "Este projeto foi inspirado nos totens de auto-atendimento do McDonald's, proporcionando uma experiência dinâmica, intuitiva e eficiente para quem deseja realizar pedidos de forma prática e sem complicações. Sistema ideal para restaurantes, lanchonetes, cafeterias e outros estabelecimentos",
+    link: "https://self-checkout-rust.vercel.app/mcdonalds",
     icons: [
       { icon: "ri:reactjs-fill", width: 30, height: 30 },
-      { icon: "cib:js", width: 30, height: 30 },
-      { icon: "flowbite:css-solid", width: 31, height: 31 },
-      { icon: "flowbite:html-solid", width: 31, height: 31 },
+      { icon: "catppuccin:next", width: 30, height: 30 },
+      { icon: "akar-icons:typescript-fill", width: 30, height: 30 },
+      { icon: "mdi:tailwind", width: 30, height: 30 },
+      { icon: "akar-icons:postgresql-fill", width: 30, height: 30 },
+      { icon: "lineicons:prisma", width: 30, height: 30 },
     ],
   },
   {
     id: 2,
-    title: "Viajou Anotou",
-    img: "viajou-anotou.png",
-    desc: "O Viajou Anotou permite aos usuários registrarem suas viagens de forma interativa. O usuário pode selecionar cidades no mapa, adicionar datas e notas sobre cada viagem e visualizar um histórico completo das localidades visitadas.",
-    link: "https://viajou-anotou-mz.netlify.app/",
+    title: "Next Level",
+    img: "next-level.png",
+    type: "E-commerce",
+    desc: "O Next Level é mais do que uma simples loja virtual, é um verdadeiro paraíso para os apaixonados por videogames! Aqui, você encontra uma seleção de jogos, consoles e acessórios para todas as plataformas, desde os clássicos até os lançamentos mais aguardados.",
+    link: "https://ecommerce-roan-eta-38.vercel.app/",
     icons: [
-      { icon: "devicon-plain:reactrouter", width: 30, height: 30 },
       { icon: "ri:reactjs-fill", width: 30, height: 30 },
-      { icon: "cib:js", width: 30, height: 30 },
-      { icon: "flowbite:css-solid", width: 31, height: 31 },
-      { icon: "flowbite:html-solid", width: 31, height: 31 },
+      { icon: "mdi:tailwind", width: 30, height: 30 },
     ],
   },
   {
     id: 3,
-    title: "Fit Genesis",
-    img: "fit-genesis.png",
-    desc: "Landing Page onde você encontra informações sobre aulas personalizadas, acesso a equipamentos de última geração e dicas de profissionais para maximizar seus resultados!",
-    link: "https://fit-genesis.netlify.app/",
+    title: "Viajou Anotou",
+    img: "viajou-anotou.png",
+    type: "Sistema Web",
+    desc: "O Viajou Anotou é o companheiro ideal para viajantes que desejam registrar e reviver cada momento especial de suas aventuras! Com uma interface intuitiva e interativa, o usuário pode criar um verdadeiro diário digital de viagens, organizando suas experiências de forma prática e envolvente.",
+    link: "https://viajou-anotou-mz.netlify.app/",
     icons: [
       { icon: "ri:reactjs-fill", width: 30, height: 30 },
-      { icon: "cib:js", width: 30, height: 30 },
+      { icon: "devicon-plain:reactrouter", width: 30, height: 30 },
       { icon: "flowbite:css-solid", width: 31, height: 31 },
-      { icon: "flowbite:html-solid", width: 31, height: 31 },
     ],
   },
   {
-    id: 1,
-    title: "McDonald's",
-    img: "mcdonalds.png",
-    desc: "Este projeto é um sistema de Self Checkout inspirado nos totens de auto-atendimento do McDonald's, onde o usuário pode realizar seu pedido de forma dinâmica e intuitiva.",
-    link: "https://self-checkout-rust.vercel.app/mcdonalds",
-    icons: [],
+    id: 4,
+    title: "Fit Genesis",
+    img: "fit.png",
+    type: "Landing Page",
+    desc: "Se você busca aulas personalizadas, acesso a equipamentos de última geração e orientações de especialistas, encontrou o lugar certo! Nossa Landing Page foi criada para proporcionar todas as informações que você precisa para atingir seus objetivos fitness de forma eficiente e motivadora.",
+    link: "https://fit-genesis.netlify.app/",
+    icons: [
+      { icon: "ri:reactjs-fill", width: 30, height: 30 },
+      { icon: "mdi:tailwind", width: 30, height: 30 },
+    ],
   },
 ]
 
@@ -72,6 +77,7 @@ const Single = ({ item }) => {
           </div>
           <motion.div className="textContainer" style={{ y }}>
             <h2>{item.title}</h2>
+            <p className="type-project">{item.type}</p>
             <p>{item.desc}</p>
             <div className="linkAndIcons">
               <a href={item.link} target="blank">
