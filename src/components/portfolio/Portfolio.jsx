@@ -7,7 +7,7 @@ const items = [
   {
     id: 1,
     title: "Next Level",
-    img: "next.png",
+    img: "2.png",
     desc: "Bem-vindo ao Next Level, um e-commerce de games focado na venda de jogos e consoles! 🕹️🔥",
     link: "https://ecommerce-roan-eta-38.vercel.app/",
     icons: [
