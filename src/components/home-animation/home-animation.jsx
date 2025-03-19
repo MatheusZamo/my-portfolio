@@ -4,7 +4,7 @@ import animationData from "./home-animation.json"
 import "./home-animation.scss"
 
 const HomeAnimation = () => {
-  const [animation, setAnimation] = useState({
+  const [animation] = useState({
     isStopped: false,
     isPaused: false,
   })
@@ -18,7 +18,7 @@ const HomeAnimation = () => {
     },
   }
   return (
-    <div>
+    <div className="animationHome">
       <Lottie
         options={defaultOptions}
         height={400}
