@@ -30,7 +30,7 @@ const Hero = () => {
           >
             Matheus Henrique
           </motion.h1>
-          <TypeWriter value="Freelancer" />
+          <TypeWriter />
           <div className="animation">
             <HomeAnimation />
           </div>

@@ -35,7 +35,7 @@ const items = [
   {
     id: 3,
     title: "Viajou Anotou",
-    img: "viajou-anotou.png",
+    img: "viajou.png",
     type: "Sistema Web",
     desc: "O Viajou Anotou é o companheiro ideal para viajantes que desejam registrar e reviver cada momento especial de suas aventuras! Com uma interface intuitiva e interativa, o usuário pode criar um verdadeiro diário digital de viagens, organizando suas experiências de forma prática e envolvente.",
     link: "https://viajou-anotou-mz.netlify.app/",

@@ -41,9 +41,10 @@
     @include mobile {
       display: flex;
       margin-right: 1px;
-      margin-left: 65px;
-      font-size: 20px;
+      padding-left: 155px;
+      font-size: 28px;
       top: 50%;
+      width: 500px;
     }
   }
 
@@ -57,12 +58,12 @@
     position: absolute;
     top: 35%;
     width: 60%;
-    margin-right: 350px;
+    margin-right: 400px;
 
     @include mobile {
-      font-size: 42px;
-      margin-left: 480px;
-      top: 30%;
+      font-size: 50px;
+      margin-left: 530px;
+      top: 25%;
     }
   }
 
