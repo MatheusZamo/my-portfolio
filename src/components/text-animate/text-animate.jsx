@@ -7,7 +7,7 @@ const TypeWriter = () => {
   const [isDeleting, setIsDeleting] = useState(false)
   const [showCursor, setShowCursor] = useState(true)
 
-  const textArray = ["Freelancer", "Full-Stack"]
+  const textArray = ["Freelancer", "Full-Stack", "Web"]
   const typingDelay = 150
   const erasingDelay = 100
   const newTextDelay = 2000
