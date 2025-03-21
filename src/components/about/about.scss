@@ -91,7 +91,8 @@ ul {
 
   @include mobile {
     width: 100%;
-    margin: 10px;
+    margin-left: 0px;
+    padding-left: 30px;
   }
 }
 
