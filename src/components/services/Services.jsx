@@ -77,8 +77,8 @@ const Services = () => {
           <div className="icon-services">
             <iconify-icon
               icon="la:laptop-code"
-              width="6em"
-              height="6em"
+              width="5em"
+              height="5em"
             ></iconify-icon>
           </div>
           <p>
@@ -91,8 +91,8 @@ const Services = () => {
           <div className="icon-services">
             <iconify-icon
               icon="basil:headset-solid"
-              width="6em"
-              height="6em"
+              width="5em"
+              height="5em"
             ></iconify-icon>
           </div>
           <p>
@@ -105,8 +105,8 @@ const Services = () => {
           <div className="icon-services">
             <iconify-icon
               icon="vaadin:tools"
-              width="5em"
-              height="5em"
+              width="4em"
+              height="4em"
             ></iconify-icon>
           </div>
           <p>
@@ -119,8 +119,8 @@ const Services = () => {
           <div className="icon-services">
             <iconify-icon
               icon="ri:seo-line"
-              width="6em"
-              height="6em"
+              width="5em"
+              height="5em"
             ></iconify-icon>
           </div>
           <p>
