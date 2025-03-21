@@ -46,6 +46,7 @@
 
     @include mobile {
       overflow: visible;
+      margin-top: 20px;
     }
 
     .wrapper {
@@ -140,17 +141,5 @@
         }
       }
     }
-  }
-}
-
-.titleMobilePortfolio {
-  display: none;
-
-  @include mobile {
-    display: block;
-    font-size: 30px;
-    color: rgb(3, 110, 253);
-    text-align: center;
-    padding: 30px;
   }
 }
