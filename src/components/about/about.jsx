@@ -8,7 +8,7 @@ const skills = {
     opacity: 0,
   },
   animate: {
-    x: 10,
+    x: 15,
     opacity: 1,
     transition: {
       duration: 0.5,
