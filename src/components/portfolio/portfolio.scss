@@ -44,6 +44,10 @@
     height: 100%;
     overflow: hidden;
 
+    @include mobile {
+      overflow: visible;
+    }
+
     .wrapper {
       max-width: 1066px;
       height: 100%;
@@ -136,5 +140,17 @@
         }
       }
     }
+  }
+}
+
+.titleMobilePortfolio {
+  display: none;
+
+  @include mobile {
+    display: block;
+    font-size: 30px;
+    color: rgb(3, 110, 253);
+    text-align: center;
+    padding: 30px;
   }
 }
