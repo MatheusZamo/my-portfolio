@@ -45,7 +45,7 @@
     overflow: hidden;
 
     @include mobile {
-      overflow: visible;
+      // overflow: visible;
     }
 
     .wrapper {

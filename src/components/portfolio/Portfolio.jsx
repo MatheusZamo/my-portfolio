@@ -13,7 +13,7 @@ const items = [
     link: "https://self-checkout-rust.vercel.app/mcdonalds",
     icons: [
       { icon: "ri:reactjs-fill", width: 30, height: 30 },
-      { icon: "catppuccin:next", width: 30, height: 30 },
+      { icon: "ri:nextjs-fill", width: 30, height: 30 },
       { icon: "akar-icons:typescript-fill", width: 30, height: 30 },
       { icon: "mdi:tailwind", width: 30, height: 30 },
       { icon: "akar-icons:postgresql-fill", width: 30, height: 30 },
