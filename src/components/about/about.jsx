@@ -109,20 +109,22 @@ const About = () => {
           </li>
           <li>
             <iconify-icon
+              icon="mdi:tailwind"
+              width="4rem"
+              height="4rem"
+              className="icon-tailwind"
+            ></iconify-icon>
+            <p className="icon-tailwind">Tailwind</p>
+          </li>
+          <li>
+            <iconify-icon
               icon="ri:javascript-fill"
               width="4em"
               height="4em"
             ></iconify-icon>
             <p className="icon-js">Javascript</p>
           </li>
-          <li>
-            <iconify-icon
-              icon="ri:html5-fill"
-              width="4em"
-              height="4em"
-            ></iconify-icon>
-            <p className="p-icon">Html</p>
-          </li>
+
           <li>
             <iconify-icon
               icon="tdesign:css3-filled"
@@ -133,12 +135,11 @@ const About = () => {
           </li>
           <li>
             <iconify-icon
-              icon="mdi:tailwind"
-              width="4rem"
-              height="4rem"
-              className="icon-tailwind"
+              icon="ri:html5-fill"
+              width="4em"
+              height="4em"
             ></iconify-icon>
-            <p className="icon-tailwind">Tailwind</p>
+            <p className="p-icon">Html</p>
           </li>
         </motion.ul>
       </div>
